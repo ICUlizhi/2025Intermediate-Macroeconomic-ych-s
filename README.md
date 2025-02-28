@@ -2,7 +2,7 @@
 2025春 国发院 中级宏观经济学 余昌华老师授课 课程笔记
 ## 项目简介
 
-本笔记在 Overleaf 平台上基于 **LaTeX** 编写，旨在突破以往我在博弈论、数算等课程中 Markdown 知识梳理的局限，提升可读性，最终实现**自编教材级**的笔记整理目标。
+本笔记基于 **LaTeX** 编写，旨在突破以往我在博弈论、数算等课程中 Markdown 知识梳理的局限，提升可读性，最终实现**自编教材级**的笔记整理目标。
 
 ## 致谢
 
@@ -18,10 +18,3 @@
 
 本笔记采用 [ElegantBook](https://github.com/ElegantLaTeX/ElegantBook) 模板，感谢其优雅的设计与强大的功能支持。
 
-___
-## 笔记更新记录
-
-| 时间   | 主题 | 笔记 URL (可预览, 下载pdf) | 状态|
-| ------ | ---- | --- | --- |
-| 2025/2/21 |      | [中宏1](https://www.overleaf.com/read/rkqjmpzrmsss#04e762)   | 完结 |
-| 2025/2/28 |      | [中宏2](https://www.overleaf.com/read/jwfmbnwzpdnb#83c03c)   | 编写中 |
