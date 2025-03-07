@@ -32,7 +32,7 @@
 \tableofcontents
 
 \mainmatter
-\end{comment}
+%\end{comment}
 
 \chapter{The Data of Macroeconomics}
 \begin{introduction}[Keywords]
@@ -194,6 +194,9 @@
     \item supply 
     \item marginal product of labor 边际劳动力
     \item total factor productivity 全要素生产率
+    \item Disposable income 可支配收入
+    \item marginal propensity to consume 消费倾向
+    \item Budget surpluses and deficits 预算盈余和赤字
 \end{introduction}
 \begin{figure}[htbp]
     \centering
@@ -345,13 +348,19 @@
     \item closed economy : no NX
 \end{itemize}
 
+\newpage
+
 \subsection{Consumption}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{image/ConsumptionFunction.png}
     \caption{消费函数}
 \end{figure}
-
+\begin{itemize}
+    \item \textbf{可支配收入} 是总收入减去总税收：$Y - T$。
+    \item 消费函数：$C = C (Y - T )$
+    \item 定义：\textbf{边际消费倾向 (MPC)} 是指可支配收入增加一美元时，消费 $C$ 的变化量。
+\end{itemize}
 
 \subsection{Investment}
 \begin{figure}[htbp]
@@ -359,6 +368,91 @@
     \includegraphics[width=0.7\textwidth]{image/Investmentfunction.png}
     \caption{投资函数}
 \end{figure}
+\begin{itemize}
+    \item 投资函数为
+    $
+    I = I(r)
+    $
+    , 其中 $ r $表示实际利率，即经过通胀调整后的名义利率。
+    
+    \item 实际利率是：
+    \begin{itemize}
+        \item 借贷的成本
+        \item 使用自有资金进行投资的机会成本
+    \end{itemize}
+    
+    \item 因此，$ I $ 与 $ r $ 负相关。
+\end{itemize}
 \subsection{Government spending}
+\begin{itemize}
+    \item $G$ = 政府在商品和服务上的支出
+    \item $G$ 不包括转移支付（例如，社会保障福利、失业保险福利）
+    \item 假设政府支出和总税收是外生的：$G = G$ 且 $T = T$
+\end{itemize}
 
-% \end{document}
+\begin{proposition}[商品和服务市场]
+    \begin{itemize}
+        \item 总需求：
+        $$
+        Y = C(Y - T) + I(r) + G
+        $$
+        \item 总供给：
+        $$
+        Y = F(K, L)
+        $$
+        \item 均衡：
+        $$
+        Y = C(Y - T) + I(r) + G
+        $$
+        \item 实际利率调整以使需求等于供给：
+    \end{itemize}
+\end{proposition}
+
+\newpage
+
+\section{The loanable funds market}
+\begin{itemize}
+    \item 信贷市场 : 金融系统的简单供需模型。
+    \item 一种资产：“信贷”
+    \begin{itemize}
+        \item 资金需求：投资
+        \item 资金供给：储蓄
+        \item 资金的“价格”：实际利率
+    \end{itemize}
+    \item 对信贷的需求
+    \begin{itemize}
+        \item 投资者希望借入资金以进行投资
+        \item 投资者的需求曲线是向下倾斜的
+    \end{itemize}
+\end{itemize}
+\begin{note}
+    信贷市场的投资曲线和之前的投资函数是一样的.
+\end{note}
+
+\begin{definition}[储蓄的类型]
+    \begin{itemize}
+        \item 私人储蓄：$= (Y - T) - C$
+        \item 公共储蓄：$= T - G$
+        \item 总储蓄(National saving)：$S = (Y - T) - C + T - G = Y - C - G$
+    \end{itemize}
+\end{definition}
+
+\begin{definition}[预算盈余和赤字]
+    \begin{itemize}
+        \item 预算盈余：$T - G = $ 公共储蓄
+        \item 赤字：$G - T$
+        \item 如果 $G = T$, 预算平衡 (balanced budget)
+    \end{itemize}
+\end{definition}
+\begin{note} 美国政府通过发行国债来为其赤字提供资金, 也就是借. 实际上高债务是一个全球现象, \end{note}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{image/Loanablefundsmarketequilibrium.png}
+    \caption{信贷市场均衡}
+\end{figure}
+
+\begin{note} 本节最后以信贷市场为案例讲了一些比较静态分析, 或者说去 mastering 某个变化 (例如政府增大支出且减税) 带来的影响 (减少储蓄), 不再赘述 
+    
+政府增大支出可能来自于新冠疫情等 \end{note}
+
+%\end{document}

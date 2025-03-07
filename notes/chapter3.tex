@@ -1,0 +1,155 @@
+ \begin{comment}
+\documentclass[lang=cn,10pt,green]{elegantbook}
+\usepackage{subcaption} % 引入 subfigure 宏包
+\title{2025年中级宏观经济学笔记}
+\subtitle{授课: 余昌华老师}
+
+\author{徐靖}
+\institute{PKU}
+\date{Febuary 28, 2025}
+\bioinfo{声明}{请勿用于个人学习外其他用途!}
+
+\extrainfo{个人笔记, 如有谬误, 欢迎指正! 联系方式 : 2200012917@stu.pku.edu.cn}
+
+\setcounter{tocdepth}{3}
+
+\logo{logo-blue.png}
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+% \definecolor{customcolor}{RGB}{32,178,170}
+% \colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+%\end{comment}
+
+\chapter{The Monetary System}
+
+\begin{introduction}[Keywords]
+    \item Monetary policy 货币政策
+    \item Demand deposits 活期存款
+    \item Certificates of deposit 定期存款
+    \item Reserves 准备金
+    \item Outstanding loans 未偿贷款
+\end{introduction}
+\section{Money and the Monetary System}
+\subsection{introduction of Money}
+货币是可随时交易的资产.
+\begin{proposition}
+    \begin{itemize}
+        \item 功能
+        \begin{itemize}
+            \item 交易媒介
+            \item 价值储藏
+            \item 价格尺度
+        \end{itemize}
+        \item 类型
+        \begin{itemize}
+            \item Fiat money 法定货币 (没有内在价值 intrinsic value, 如 RMB)
+            \item Commodity money 商品货币 (有内在价值, 如黄金)
+        \end{itemize}
+        \item 分类 (按流动性)
+        \begin{itemize}
+            \item C : 现金
+            \item M1 : 现金, 活期存款, 支票
+            \item M2 : M1, 定期存款, 储蓄存款, 金融市场基金
+        \end{itemize}
+    \end{itemize}
+\end{proposition}
+\begin{note}法定货币背后由政府信用支持.\end{note}
+\begin{problem}
+    哪些是货币? 现金, 支票, 信用卡, 活期存款 (Deposits in checking accounts), 定期存款, 比特币, 中央银行发布的电子货币全都是, 这是一个很宽泛的概念.
+\end{problem}
+
+\subsection{The Monetary System}
+\begin{definition}
+    \begin{itemize}
+        \item \textbf{货币供给} : M
+        \item \textbf{货币政策} : 中央银行调整货币供给以影响经济
+        \item 美联储 : Federal Reserve (The Fed)
+        \item 中国人民银行 : People's Bank of China (PBoC)
+        \item 为了控制货币供给, Fed/PBoC 使用\textbf{公开市场操作(open market operations, OMO)}, 即买卖政府债券
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    货币供给与现金加上活期存款相等: 
+    $$M = C + D$$
+    由于货币供给包含了活期存款, 所以银行系统扮演重要作用
+\end{theorem}
+
+\subsection{The Banking System}
+\begin{definition}
+    \begin{itemize}
+        \item Reserves (R) : 准备金, 银行存款中未贷出的部分
+        \begin{itemize}
+            \item 银行的负债来自于存款
+            \item 银行的资产来自于准备金和未偿贷款
+        \end{itemize}
+        \item 100-Percent-Reserve Banking : 银行将所有存款作为准备金, 不贷出
+        \item Fractional-Reserve Banking : 银行只保留部分存款作为准备金
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    总货币供给 = (1/准备金率) $\times$ 货币基础
+\end{theorem}
+\begin{note} 比如说中央银行要求商业银行准备金率为10\%, 第一家银行存入100元, 那么第一家银行可以贷出90元, 第二家银行存入90元, 第二家银行可以贷出81元, 以此类推, 最终总共可以贷出 $100 + 90 + 81 + \cdots = 1000$ 元.
+\end{note}
+\begin{itemize}
+    \item 一个 Fractional-reserve banking system 创造了借贷关系, 但没有创造新的财富.
+    \item 提高经济效率可以促进财富的创造, 如没有则形成 "空转".
+\end{itemize}
+\section {Bank capital, leverage and capital requirements}
+\begin{definition}
+    \begin{itemize}
+        \item \textbf{Bank capital} : 银行的净资产, 即资产减去负债
+        \item \textbf{Leverage} : 资产与净资产的比值
+        \item \textbf{Capital requirements} : 银行必须保持一定的净资产, 以应对风险. 杠杆太高会使得银行高风险 (vunerable) 
+    \end{itemize}
+\end{definition}
+
+\begin{proposition}[货币供给模型]
+    \begin{itemize}
+        \item 货币基础, $B = C + R$
+        \begin{itemize}
+            \item 由中央银行控制的
+        \end{itemize}
+        \item 准备金率, $rr = R/D$
+        \begin{itemize}
+            \item 取决于法规和银行政策
+        \end{itemize}
+        \item 现金持有率, $cr = C/D$
+        \begin{itemize}
+            \item 取决于个人偏好
+        \end{itemize}
+        \item 货币乘数, $m = M/B = \frac{cr+1}{cr+rr}$
+        \begin{itemize}
+            \item 取决于银行体系, 注意对货币乘数的影响可以做比较静态分析
+        \end{itemize}
+    \end{itemize}
+\end{proposition}
+\begin{theorem}
+    央行控制货币供给的方法:
+    $$M = m \times B$$
+    通过控制货币基础 B, 乘以货币乘数后得到广义货币供给 M.
+\end{theorem}
+
+\section{The instruments of monetary policy}
+改变货币基础的方法:
+\begin{itemize}
+    \item 公开市场操作 (OMO) (美联储最爱)
+\end{itemize}
+
+%\end{document}
